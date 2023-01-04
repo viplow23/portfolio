@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Forms</title></head>
+    <body>
+        <form>
+        <h4>Welcome User....!!!!! please Fills the given Form</h4>
+            <h3>Text Box</h3>
+            <label>Name:</label>
+            <input type="text" placeholder="Enter Name" title="Please fill min of 3 characetrs" pattern="[a-zA-Z]{3,10}" required>
+            <p>Name should be of minimum 3 characters and maximum of 10 characters</p>
+            <p>[a-zA-Z]Name should contain characters only</p>
+        
+            <h3>Email Box</h3>
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" title="Please enter valid email "pattern="[a-ZA-Z0-9#*]+@[a-zA-Z]+.[a-z]{2,3}"required>
+            <p>1.Before @ email should contain characters and symbols as mentioned in the code</p>
+            <p>2.After @ email should contain characters only and.</p>
+            <p>3.After . email should contain maximum of 3 characters only.</p>
+            <p>4."+" means any number of characters user can enter,there is no maximum,minimum range</p>
+            
+            <h3>Spin control or Number Box</h3>
+            <label>Age</label>
+            <input type="number" min="18" max="29">
+            <p>1.If we are not using "min" and "max" attribute, the default value for UP ARROW is 1 and it will increment by 1 for every click of UP ARROW</p>
+            <p>2.For DOWN ARROW default value is -1 and it will decrease the value by 1 after every click of DOWN ARROW</p>
+            <p>3.As per the code Minimum age should be 18 and Maximum age should be 29</p>
+            
+            <h3>Phone Number Box</h3>
+            <label>Phone_No:</label>
+            <input type="text" placeholder="Enter your Phone number" title="Please enter valid phone number" pattern="^[7-9]{1}[0-9]{9}$">
+            
+            
+            <h3>Calendar Box</h3>
+            <label>Select Date:</label>
+            <input type="date" min="1990-01-10" max="2000-01-10">
+            <p>1.In the Input Tag "type attribute must be specified as "date" to create "calendar Box" in the form</p>
+            <p>2.By default calendar box will display the data in mm-dd-yyyy format.</p>
+            <p>3.Using "min" and "max" attribute we can set the minimum and maximum dates to be displayed in the calendar.</p>
+            <p>4.While specifying the value for min and max attribute "yyyy-mm-dd" format must be used.</p>
+            
+            <h3>Check Box</h3>
+            <label>Technical Skills:</label>
+            <input type="checkbox">Database
+            <input type="checkbox">c++
+            <input type="checkbox">Python
+            <input type="checkbox">HTML,Js
+            
+            <p>Here,we can select ,multiple options. </p>
+            
+            <h3>Select Box</h3>
+            <label>Select City:</label>
+            <select>
+                <option>select</option>
+                <option>Mumbai</option>
+                <option>Pune</option>
+                <option>Banglore</option>
+                <option>Jalagaon</option>
+            </select>
+            <p>All the options we have given using<!-- <option><option>tag-->,should be present between the <!--<select></select>tag--></p>
+
+            <h3>Radio Button</h3>
+            <label>Gender:</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Others
+            
+            <p>1.We can select only one option at a time</p>
+            <p>2.Select input type "radio" to get radio buttons along with we have to give same number for all the elements using "name" attribute</p>
+            
+            
+            <h3>Upload Button</h3>
+            <label>Upload Your Resume</label>
+            <input type="file">
+            <br><br>
+            <h3>Text Area</h3>
+            <textarea>Write Your Comments Here.....!!!!!</textarea>
+            
+            <h3>Range Button</h3>
+            <input type="range">
+            
+            <h3>Reset Button</h3>
+            <input type="reset">
+            
+            <h3>Search Box</h3>
+            <input type="search">
+            
+            <h3>Color Pallet</h3>
+            <input type="color">
+            
+            <h3>Time</h3>
+            <input type="time">
+            
+            <h3>Date and Time</h3>
+            <input type="datetime-local">
+            <input type="submit">
+        </form>
+    </body>
+    
+</html>
